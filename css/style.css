@@ -1,0 +1,109 @@
+/*не дает padding расширять блоки*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+header {
+  max-width: 1920px;
+  min-height: 100px;
+  background: url(../img/bg-header.jpg) center top/cover no-repeat;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+header .container {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.phones a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  display: block;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.phones a::before {
+  content: url(../img/icon-phone.png);
+  margin-right: 10px;
+  display: block;
+  margin-top: 5px;
+}
+.phones .email::before {
+  content: url(../img/icon-email.png);
+}
+.callback {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 2px;
+  background: #5cc5e7;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px #000;
+  animation: shadow 2s infinite; /*задаю анимацию и время*/
+}
+
+/* сценарий самой анимации */
+@keyframes shadow {
+  50% {
+    box-shadow: 0 0 20px 10px #229fc8;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #229fc8;
+  }
+}
+
+.search-form h1 {
+  color: #fff;
+  font-family: "Lobster", cursive;
+  font-size: 60px;
+}
+.search-form input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0 15px;
+  height: 40px;
+  border: 2px solid #229fc8;
+}
+.form-block {
+  display: flex;
+}
+.form-block button {
+  background: #229fc8 url(../img/icon-search.png) center center no-repeat;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+}
+.menu {
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #229fc8;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu li {
+  border-right: 1px solid #fff;
+}
+.menu a {
+  display: block;
+  height: 60px;
+  padding: 0 30px;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  line-height: 60px;
+}
+.menu a:hover {
+  background: #0079a1;
+}
