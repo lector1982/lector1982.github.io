@@ -20,6 +20,13 @@ header .container {
   display: flex;
   justify-content: space-between;
 }
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow:hidden;
+  box-shadow: 0 0 20px 10px #229fc8
+}
 .phones a {
   text-decoration: none;
   color: #fff;
@@ -81,10 +88,20 @@ header .container {
   border: none;
   cursor: pointer;
 }
+.mini-menu {
+  height: 60px;
+  padding: 0 30px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  line-height: 60px;
+  cursor:pointer;
+  display: none;
+  background: url(../img/icon-menu.png) 96% center no-repeat;
+}
 .menu {
   max-width: 1920px;
   margin: 0 auto;
-  background: #229fc8;
+  background: linear-gradient(to bottom, #229fc8, #05274a);
 }
 .menu ul {
   list-style: none;
@@ -106,4 +123,22 @@ header .container {
 }
 .menu a:hover {
   background: #0079a1;
+}
+.content {
+  padding:50px 20px;
+  background: rgba(24,132,218,0.32);
+}
+.content h1 {
+  text-align: center;
+  color:#0079a1;
+  font-family: "Lobster", cursive;
+  margin:0 0 30px;
+}
+.content h1::after {
+  content:"";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #0079a1;
+  margin:10px auto;
 }

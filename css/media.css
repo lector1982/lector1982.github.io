@@ -1,6 +1,36 @@
-/**/
+/*все устройства до 1000px*/
 @media(max-width:1000px) {
+	/*выравниваем внутри шапки в столбик и по центру экрана*/
 	header .container {
 		flex-direction: column;
+		align-items: center;
+	}
+	.form-block {
+		justify-content: center;
+	}
+	.phones {
+		margin-top: 30px;
+	}
+	.callback {
+		margin:20px;
+	}
+	/*для меню*/
+	.mini-menu {
+		display: block;
+	}
+	.menu ul {
+		flex-direction: column;
+		border-top: 1px solid #fff;
+		display: none;
+	}
+	.menu li {
+		border-right: none;
+		border-bottom: 1px solid #fff;
+	}
+}
+
+@media(max-width:600px) {
+	.search-form h1 {
+		font-size: 38px;
 	}
 }
